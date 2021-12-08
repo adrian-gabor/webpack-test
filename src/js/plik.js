@@ -1,3 +1,4 @@
+ //do nauki
  import '../scss/style.scss';
 
  const liczba = 20;

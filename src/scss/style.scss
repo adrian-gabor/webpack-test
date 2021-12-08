@@ -9,15 +9,14 @@ html {
 }
 
 body {
-    background-color: #0093E9;
-    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    background-color: #FFF3B0;
     /* background-color: var(--platinum); */
     /* CSS HEX */
-    --plump-purple: #52489cff;
-    --true-blue: #4062bbff;
-    --maximum-blue-green: #59c3c3ff;
+    --plump-purple: #101935;
+    --true-blue: #101935;
+    --maximum-blue-green: #D6E3F8;
     --platinum: #ebebebff;
-    --fiery-rose: #f45b69ff;
+    --fiery-rose: #564787;
 }
 
 
@@ -88,7 +87,7 @@ body {
     border-radius: 20px;
     margin-bottom: 15px;
     &:hover {
-        background-color: aqua;
+        background-color: #E7f4F9;
     }
     &__title {
         color: var(--true-blue);
