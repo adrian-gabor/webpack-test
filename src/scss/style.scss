@@ -7,16 +7,19 @@ html {
 *:after {
     box-sizing: inherit;
 }
-
-body {
-    background-color: #FFF3B0;
-    /* background-color: var(--platinum); */
-    /* CSS HEX */
+:root{
     --plump-purple: #101935;
     --true-blue: #101935;
     --maximum-blue-green: #D6E3F8;
     --platinum: #ebebebff;
     --fiery-rose: #564787;
+    --backgorund: #FFF3B0
+}
+
+
+body {
+    background-color: var(--backgorund) ;
+    
 }
 
 
@@ -47,6 +50,13 @@ body {
         padding: 10px;
         border-radius: 5px;
     }
+}
+.dark{
+    position: absolute;
+    left: 18px;
+    top: 10px;
+    border: none;
+    background: none;
 }
 
 
@@ -111,6 +121,7 @@ body {
     }
     &__description {
         text-align: justify;
+        color: var(--plump-purple);
     }
 }
 
