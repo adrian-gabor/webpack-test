@@ -1,5 +1,5 @@
  //do nauki
- import '../scss/style.scss';
+ import '../scss/main.scss';
 
  const liczba = 20;
  const imie = "elo";
