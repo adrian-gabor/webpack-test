@@ -11,12 +11,18 @@ html {
     box-sizing: inherit;
 }
 :root{
-    --plump-purple: #101935;
-    --true-blue: #101935;
-    --maximum-blue-green: #D6E3F8;
-    --platinum: #ebebebff;
-    --fiery-rose: #564787;
-    --backgorund: #FFF3B0
+    --ui0: #000000;
+    --ui1: #232735;
+    --ui2: #A1A4B1;
+    --ui3: #D3D4D8;
+    --ui4: #F0F1F3;
+    --text: #232735;
+    --text2: #505565;
+    --text3: #8B90A0;
+    --text-inverse: #FFFFFF;
+    --hover: #3E465F;
+    --hover1: #EEEEF1;
+    --backgorund: #FFFFFF;
 }
 
 
@@ -27,7 +33,7 @@ body {
 
 .header{
     border-radius: 5px;
-    background-color: var(--fiery-rose);
+    background-color: var(--ui1);
     grid-area: header;
     min-height: 50px;
     position: fixed;
@@ -42,13 +48,13 @@ body {
         display: block;
     }
     &__link {
-        color: var(--plump-purple);
+        color: var(--ui3);
         display: block;
         box-sizing: border-box;
         text-decoration: none;
         cursor: pointer;
         margin: 0 10px;
-        border: solid 2px var(--true-blue);
+        border: solid 2px var(--ui3);
         padding: 10px;
         border-radius: 5px;
     }
@@ -77,7 +83,7 @@ body {
 
 .main {
     margin: 40px 0;
-    background-color: var(--maximum-blue-green);
+    background-color: var(--ui3);
     grid-area: content;
     min-height: 100%;
     /* width: 1000px; */
@@ -88,21 +94,21 @@ body {
 .content__title {
     text-align: center;
     text-transform: uppercase;
-    color: var(--plump-purple);
+    color: var(--ui1);
     padding-top: 20px;
     margin: 0;
 }
 
 .post {
     padding: 0 20px;
-    border: solid 5px var(--true-blue);
+    border: solid 5px var(--ui1);
     border-radius: 20px;
     margin-bottom: 15px;
     &:hover {
-        background-color: #E7f4F9;
+        background-color: var(--ui4);
     }
     &__title {
-        color: var(--true-blue);
+        color: var(--text);
         text-align: center;
         &::before {
             content:"" ;
@@ -110,7 +116,7 @@ body {
             width: 10px;
             height: 10px;
             border-radius: 50%;
-            background-color: #fff;
+            background-color: var(--ui1);
         }
         &::after {
             content:"" ;
@@ -118,29 +124,29 @@ body {
             width: 10px;
             height: 10px;
             border-radius: 50%;
-            background-color: #fff;
+            background-color: var(--ui1);
         }
     }
     &__description {
         text-align: justify;
-        color: var(--plump-purple);
+        color: var(--text);
     }
 }
 
 
 .footer {
     grid-area: footer;
-    background-color: var(--fiery-rose);
+    background-color: var(--ui1);
     padding: 5px;
     text-align: center;
     border-radius: 5px;
     &__description {
-        color: var(--plump-purple);
+        color: var(--ui3);
     }
     &__link {
         text-decoration: none;
         cursor: pointer;
-        color: var(--platinum);
+        color: var(--ui2);
     }
 }
 

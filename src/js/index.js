@@ -52,26 +52,54 @@ hamburger.addEventListener('click', () => {
     const nav = document.querySelector('.navigation--js')
     nav.classList.toggle('navigation--open')
 })
+// do poprawek ide spać
+var tImg = ["/img/off.png", "/img/on.png"];      
+var vImg = true;
+function fSetImg(){
+    if (vImg){
+        document.getElementById('iImg').src = tImg[1];
+        vImg = false;
+    }
+    
+    else {
+        document.getElementById('iImg').src = tImg[0];
+        vImg = true;
+    }
+}
 
 const dark = document.querySelector('.dark--js')
 let isDark = false
 dark.addEventListener('click', () => {
     if (isDark == false) {
-        document.documentElement.style.setProperty('--backgorund', '#00111C')
-        document.documentElement.style.setProperty('--plump-purple', '#ffffff')
-        document.documentElement.style.setProperty('--true-blue', '#002945')
-        document.documentElement.style.setProperty('--maximum-blue-green', '#00406C')
-        document.documentElement.style.setProperty('--platinum', '#001A2C')
-        document.documentElement.style.setProperty('--fiery-rose', '#001A2C')
+        document.documentElement.style.setProperty('--ui0', '#F0F1F3')
+        document.documentElement.style.setProperty('--ui1', '#000000')
+        document.documentElement.style.setProperty('--ui2', '#232735')
+        document.documentElement.style.setProperty('--ui3', '#A1A4B1')
+        document.documentElement.style.setProperty('--ui4', '#3E465F')
+        document.documentElement.style.setProperty('--text', '#FFFFFF')
+        document.documentElement.style.setProperty('--text2', '#505565')
+        document.documentElement.style.setProperty('--text3', '#8B90A0')
+        document.documentElement.style.setProperty('--text-inverse', '#232735')
+        document.documentElement.style.setProperty('--backgorund', '#232735')
+        document.documentElement.style.setProperty('--hover', '#EEEEF1')
+        document.documentElement.style.setProperty('--hover1', '#3E465F')
         isDark = true
+        fSetImg()
     } else {
-        document.documentElement.style.setProperty('--backgorund', '#FFF3B0')
-        document.documentElement.style.setProperty('--plump-purple', '#101935')
-        document.documentElement.style.setProperty('--true-blue', '#101935')
-        document.documentElement.style.setProperty('--maximum-blue-green', '#D6E3F8')
-        document.documentElement.style.setProperty('--platinum', '#ebebebff')
-        document.documentElement.style.setProperty('--fiery-rose', '#564787')
+        document.documentElement.style.setProperty('--ui0', '#000000')
+        document.documentElement.style.setProperty('--ui1', '#232735')
+        document.documentElement.style.setProperty('--ui2', '#A1A4B1')
+        document.documentElement.style.setProperty('--ui3', '#D3D4D8')
+        document.documentElement.style.setProperty('--ui4', '#F0F1F3')
+        document.documentElement.style.setProperty('--text', '#232735')
+        document.documentElement.style.setProperty('--text2', '#505565')
+        document.documentElement.style.setProperty('--text3', '#8B90A0')
+        document.documentElement.style.setProperty('--text-inverse', '#FFFFFF')
+        document.documentElement.style.setProperty('--backgorund', '#FFFFFF')
+        document.documentElement.style.setProperty('--hover', '#3E465F')
+        document.documentElement.style.setProperty('--hover1', '#EEEEF1')
         isDark = false
+        fSetImg()
     }
 })
 console.log(moment().startOf('day').fromNow());
