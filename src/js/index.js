@@ -53,19 +53,19 @@ hamburger.addEventListener('click', () => {
     nav.classList.toggle('navigation--open')
 })
 // do poprawek ide spać
-var tImg = ["/img/off.png", "/img/on.png"];      
-var vImg = true;
-function fSetImg(){
-    if (vImg){
-        document.getElementById('iImg').src = tImg[1];
-        vImg = false;
-    }
+// var tImg = ["/img/off.png", "/img/on.png"];      
+// var vImg = true;
+// function fSetImg(){
+//     if (vImg){
+//         document.getElementById('iImg').src = tImg[1];
+//         vImg = false;
+//     }
     
-    else {
-        document.getElementById('iImg').src = tImg[0];
-        vImg = true;
-    }
-}
+//     else {
+//         document.getElementById('iImg').src = tImg[0];
+//         vImg = true;
+//     }
+// }
 
 const dark = document.querySelector('.dark--js')
 let isDark = false
@@ -84,7 +84,6 @@ dark.addEventListener('click', () => {
         document.documentElement.style.setProperty('--hover', '#EEEEF1')
         document.documentElement.style.setProperty('--hover1', '#3E465F')
         isDark = true
-        fSetImg()
     } else {
         document.documentElement.style.setProperty('--ui0', '#000000')
         document.documentElement.style.setProperty('--ui1', '#232735')
@@ -99,7 +98,6 @@ dark.addEventListener('click', () => {
         document.documentElement.style.setProperty('--hover', '#3E465F')
         document.documentElement.style.setProperty('--hover1', '#EEEEF1')
         isDark = false
-        fSetImg()
     }
 })
 console.log(moment().startOf('day').fromNow());
