@@ -1,5 +1,6 @@
 @import "~normalize.css";
 @import "_variables";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,300&display=swap');
 
 html {
     box-sizing: border-box;
@@ -10,7 +11,8 @@ html {
 *:after {
     box-sizing: inherit;
 }
-:root{
+
+:root {
     --ui0: #000000;
     --ui1: #232735;
     --ui2: #A1A4B1;
@@ -27,11 +29,11 @@ html {
 
 
 body {
-    background-color: var(--backgorund) ;
+    background-color: var(--backgorund);
 }
 
 
-.header{
+.header {
     border-radius: 5px;
     background-color: var(--ui1);
     grid-area: header;
@@ -44,9 +46,11 @@ body {
 .navigation {
     padding: 6px;
     display: none;
-    &--open{
+
+    &--open {
         display: block;
     }
+
     &__link {
         color: var(--ui3);
         display: block;
@@ -59,7 +63,8 @@ body {
         border-radius: 5px;
     }
 }
-.dark{
+
+.dark {
     position: absolute;
     left: 18px;
     top: 10px;
@@ -68,7 +73,7 @@ body {
 }
 
 
-.hamburger{
+.hamburger {
     position: absolute;
     right: 18px;
     top: 10px;
@@ -76,13 +81,13 @@ body {
     background: none;
 }
 
-.icon{
+.icon {
     width: 30px;
     height: 30px;
 }
 
 .main {
-    margin: 40px 0;
+    margin: 40px 0 0 0;
     background-color: var(--ui3);
     grid-area: content;
     min-height: 100%;
@@ -93,7 +98,11 @@ body {
 
 .content__title {
     text-align: center;
-    text-transform: uppercase;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 48px;
+    // text-transform: uppercase;
     color: var(--ui1);
     padding-top: 20px;
     margin: 0;
@@ -103,23 +112,27 @@ body {
     padding: 0 20px;
     border: solid 5px var(--ui1);
     border-radius: 20px;
-    margin-bottom: 15px;
+    margin-top: 15px;
+
     &:hover {
         background-color: var(--ui4);
     }
+
     &__title {
         color: var(--text);
         text-align: center;
+
         &::before {
-            content:"" ;
+            content: "";
             display: inline-block;
             width: 10px;
             height: 10px;
             border-radius: 50%;
             background-color: var(--ui1);
         }
+
         &::after {
-            content:"" ;
+            content: "";
             display: inline-block;
             width: 10px;
             height: 10px;
@@ -127,11 +140,35 @@ body {
             background-color: var(--ui1);
         }
     }
+
     &__description {
         text-align: justify;
         color: var(--text);
     }
 }
+
+
+.form {
+    // display: flex;
+    &__item {
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+        display: block;
+        width: 458px;
+        height: 160px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    &__button {
+        border: none;
+        background: none;
+        padding: 0px;
+        margin: 0;
+    }
+}
+
 
 
 .footer {
@@ -140,9 +177,11 @@ body {
     padding: 5px;
     text-align: center;
     border-radius: 5px;
+
     &__description {
         color: var(--ui3);
     }
+
     &__link {
         text-decoration: none;
         cursor: pointer;
@@ -165,7 +204,8 @@ body {
         display: flex;
         justify-content: center;
     }
-    .hamburger{
+
+    .hamburger {
         display: none;
     }
 }
