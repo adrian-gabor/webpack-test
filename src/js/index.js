@@ -1,11 +1,10 @@
 import '../scss/main.scss';
 import moment from 'moment'
-// uncomment the lines below to enable PWA
-// import {registerSW} from './pwa.js';
-// registerSW();
+import {registerSW} from './pwa.js';
+registerSW();
+
 
 /* place your code below */
-
 console.log('HELLO 🚀')
 const liczba = 20;
 const imie = "elo";
@@ -52,20 +51,6 @@ hamburger.addEventListener('click', () => {
     const nav = document.querySelector('.navigation--js')
     nav.classList.toggle('navigation--open')
 })
-// do poprawek ide spać
-// var tImg = ["/img/off.png", "/img/on.png"];      
-// var vImg = true;
-// function fSetImg(){
-//     if (vImg){
-//         document.getElementById('iImg').src = tImg[1];
-//         vImg = false;
-//     }
-    
-//     else {
-//         document.getElementById('iImg').src = tImg[0];
-//         vImg = true;
-//     }
-// }
 
 const dark = document.querySelector('.dark--js')
 let isDark = false

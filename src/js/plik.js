@@ -10,7 +10,7 @@
  const heading = document.querySelector('.content__title');
  heading.innerHTML = `siema i nie nie ma ${liczba} frajerze ${imie}`;
 
-$('.content__title').html(`siema i nie nie ma`);
+// $('.content__title').html(`siema i nie nie ma`);
 
 
 const funkcja = (imie, wiek) => {
