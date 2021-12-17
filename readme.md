@@ -1,8 +1,12 @@
 ![cover](./gh/hej.jfif)
 
-# WTF Webpack Starter Kit 
-
-Simple toolkit for your static websites development.
+# Strona powstaje w celach nauki frontendu 
+## Uzyte technologie
+* HTML5
+* CSS3, SASS
+* JavaScirpt, Node.js
+* Webpack
+* ...?
 
 ## How to use it?
 
