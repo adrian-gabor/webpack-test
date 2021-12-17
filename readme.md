@@ -1,4 +1,4 @@
-![cover](https://adrian-gabor.github.io/webpack-test/img/hej.jfif)
+![cover](./gh/hej.jfif)
 
 # WTF Webpack Starter Kit 
 
